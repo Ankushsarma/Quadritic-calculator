@@ -40,11 +40,11 @@ app.post("/" , function(req,res){
             
             if(discriminant > 0 ) {
                 // res.send("<h1> a1 the roots of the given equation is " + NdidD01 + " and " + NdidD02 +  " 1");
-                res.render(__dirname + '/answer', {  answer: " a1 the roots of the given equation is " + NdidD01 + " and " + NdidD02 +  " 1"  })
+                res.render(__dirname + '/answer', {  answer: "  the roots of the given equation is " + NdidD01 + " and " + NdidD02  })
             
             }else if ( discriminant == 0) {
                 // res.send("<h1> a2 the roots of the given equation is " + NdidD01 + " and " + NdidD02 + " 2");
-                res.render(__dirname + '/answer', {  answer: " a1 the roots of the given equation is " + NdidD01 + " and " + NdidD02 +  " 1"  })
+                res.render(__dirname + '/answer', {  answer: "  the roots of the given equation is " + NdidD01 + " and " + NdidD02   })
             } 
             else if( discriminant < 0){
                 // res.send("no real value")
@@ -60,7 +60,7 @@ app.post("/" , function(req,res){
             const root02 = numerator2 + " / " +denominator;
 
             // res.send("<h1> a3 The root of the given equation is " + root01 +" & " + root02 );
-            res.render(__dirname + '/answer', {  answer: " a3 The root of the given equation is " + root01 +" & " + root02  });
+            res.render(__dirname + '/answer', {  answer: "  The root of the given equation is " + root01 +" & " + root02  });
         }
 
         
@@ -93,10 +93,10 @@ app.post("/" , function(req,res){
         const root02 = numerator2 + " / "+ denominator;
 
         // res.send("<h1> a5 The root of the equation is " + root01 +" and " + root02 +"</h1>" )
-        res.render(__dirname + '/answer', {  answer:  " a5 The root of the equation is " + root01 +" and " + root02   });
+        res.render(__dirname + '/answer', {  answer:  "The root of the equation is " + root01 +" and " + root02   });
         }else{
             // res.send("<h1>a6  no real value </h1>");
-            res.render(__dirname + '/answer', {  answer:  "a6  no real value "  });
+            res.render(__dirname + '/answer', {  answer:  "  no real value "  });
         }
 
         
