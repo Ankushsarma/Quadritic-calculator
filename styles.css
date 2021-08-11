@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    background-image: url("1.jpg");
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    background-size: cover;
+    
+}
+
+
+.main-container{
+    background-color: #fff;
+    font-size: 25px;
+    padding: 20px;
+    box-shadow: 2px 2px  15px black; 
+    border-radius: 15px;
+}
+
+.secondary-container{
+    display: flex;
+    margin: 50px auto;
+}
+
+h1{
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 30px 0 30px 0;
+    right: -15px;
+    border-bottom:1px solid black;
+    width: 35%;
+}
+
+
+.btn{
+    width: 250px;
+}
