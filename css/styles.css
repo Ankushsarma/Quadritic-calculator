@@ -10,15 +10,23 @@ body{
     
 }
 
+.main01{
+    background-image: url("https://images.unsplash.com/photo-1588713444222-408f6d537ca3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHBhZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .main-container{
-    background-color: rgb(249, 255, 224);
     font-size: 25px;
     padding: 50px;
     box-shadow: 2px 2px  15px black; 
-    border-radius: 15px;
     border-top: 15px solid  black;
     border-bottom: 15px solid  black;
+    border-bottom: 0;
 }
 
 .secondary-container{
@@ -45,5 +53,18 @@ input{
 .btn{
     width: 250px;
 }
+
+.footer{
+    position: absolute;
+    width: 1010px;
+    background-color: #fff;
+}
+
+a{
+    margin: 8px 15px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 
 
