@@ -41,11 +41,11 @@ app.post("/" , function(req,res){
             
             if(discriminant > 0 ) {
                 // res.send("<h1> a1 the roots of the given equation is " + NdidD01 + " and " + NdidD02 +  " 1");
-                res.render(__dirname + '/answer', {  answer: "  the roots of the given equation is " + NdidD01 + " and " + NdidD02  })
+                res.render(__dirname + '/answer', {  answer: "The roots of the given equation is " + NdidD01 + " and " + NdidD02  })
             
             }else if ( discriminant == 0) {
                 // res.send("<h1> a2 the roots of the given equation is " + NdidD01 + " and " + NdidD02 + " 2");
-                res.render(__dirname + '/answer', {  answer: " the roots of the given equation is " + NdidD01 + " and " + NdidD02   })
+                res.render(__dirname + '/answer', {  answer: "The roots of the given equation is " + NdidD01 + " and " + NdidD02   })
             } 
             else if( discriminant < 0){
                 // res.send("no real value")
@@ -149,6 +149,11 @@ app.post("/" , function(req,res){
 
 
 })
+
+
+app.post("/failure" , function(req,res){
+    res.redirect("/");
+  })
 
 app.listen(process.env.PORT ||  port , function(){
     console.log("server is onilne on port 3000");
