@@ -22,12 +22,22 @@ app.post("/" , function(req,res){
     const Fourac= 4*a*c;
 
     const discriminant = bb - Fourac;
-    const squarerootofDiscriminant=(Math.sqrt(discriminant));
+   
+    
+
+    if (discriminant < 0 ){
+        var discriminant2 = discriminant * -1 ;
+        
+    }else{
+        var discriminant2 = discriminant * 1;
+    }
+
+    const squarerootofDiscriminant=(Math.sqrt(discriminant2));
   
-    var sq = (Math.floor(squarerootofDiscriminant))
-    console.log(sq);
+    const sq = (Math.floor(squarerootofDiscriminant))
+
     //  perfect square 
-    if(sq *sq == discriminant ){
+    if(sq *sq == discriminant2 ){
         const numerator1 = (-1 * b) + squarerootofDiscriminant;
         const numerator2 = -b - squarerootofDiscriminant;
         const denominator = 2 * a;
